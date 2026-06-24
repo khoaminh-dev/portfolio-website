@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  web:
+    build: .
+    container_name: portfolio_web
+    restart: always
+    networks:
+      - proxy
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.portfolio.rule=Host(`khoaminh.id.vn`)"
+      - "traefik.http.services.portfolio.loadbalancer.server.port=80"
+      # Assuming entrypoint is websecure and TLS is configured in Traefik by default
+      - "traefik.http.routers.portfolio.entrypoints=websecure"
+      - "traefik.http.routers.portfolio.tls=true"
+      - "traefik.http.routers.portfolio.tls.certresolver=letsencrypt"
+
+networks:
+  proxy:
+    external: true
