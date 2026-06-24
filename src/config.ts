@@ -87,6 +87,38 @@ export const config = {
             technologies: "Python, Machine Learning, Extra Trees",
             image: "/images/redxchess.png",
             description: "Co-authored a framework for detecting unusual behaviors from 2D skeletal data. Engineered 240 multi-domain descriptors and a hierarchical windowing strategy. In Submission (ISAS 2025)."
+        },
+        {
+            id: 5,
+            title: "Sankit VN",
+            category: "Web Platform / Services",
+            technologies: "React, Node.js, Fullstack",
+            image: "/images/sankitvn.png",
+            description: "Specialized technical platform for service management and workflow optimization."
+        },
+        {
+            id: 6,
+            title: "NouNails",
+            category: "Commercial Service Platform",
+            technologies: "Web Development",
+            image: "/images/nounails.png",
+            description: "Commercial service platform for an Australian business, enhancing their online engagement."
+        },
+        {
+            id: 7,
+            title: "StickEdu",
+            category: "EdTech Platform",
+            technologies: "Web Development",
+            image: "/images/stickedu.png",
+            description: "Interactive educational site providing accessible digital learning resources."
+        },
+        {
+            id: 8,
+            title: "Việt Sử Trường Ca",
+            category: "EdTech / Game Companion",
+            technologies: "Web Development",
+            image: "/images/vietsu.png",
+            description: "Comprehensive web platform accompanying a history-based board game and interactive learning application."
         }
     ],
     contact: {
